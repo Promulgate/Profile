@@ -1,0 +1,304 @@
+@font-face {
+	font-family: FontAwesome;
+	src: url('font-awesome/fonts/fontawesome-webfont.woff');
+}
+body {
+  background-color: #fff;
+  margin: 0;
+	font-family: "Old Standard TT", serif;
+	overflow-x: hidden;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+.top {
+  width: 100%;
+  height: 75px;
+  border-bottom: 2px #fff solid; 
+  position: absolute;
+}
+.top-power {      
+	color:#00c6ff;
+	margin-top: 75px;
+	width:100%;
+	height: 2px;
+	display: inline;
+	position: absolute;
+	z-index: 55;
+  background-image: -webkit-linear-gradient(right, transparent, transparent 50%, #00c6ff   50%, #00c6ff);
+  background-image: -moz-linear-gradient(right, transparent, transparent 50%, #00c6ff       50%, #00c6ff);
+  background-image: -o-linear-gradient(right, transparent, transparent 50%, #00c6ff 50%,   #00c6ff);
+  background-image: linear-gradient(to left, transparent, transparent 50%, #00c6ff 50%,     #00c6ff);
+	background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all 2s linear;
+}
+.logo {
+  font-size: 55px;
+  color: #fff;
+  float: right;
+  padding-right: 75px;
+  margin-top: 0;
+}
+.left {
+  height: 100%;
+  width: 75px;
+  border-right: 2px #00c6ff solid;
+  position: absolute;
+}
+.power-light {
+	color: #00c6ff;
+	-webkit-transition: color 2s linear;
+	-moz-transition: color 2s linear;
+	-o-transition: color 2s linear;
+	-ms-transition: color 2s linear;
+	transition: color 2s linear;
+}
+.about-footer {
+	position: fixed;
+	width: 20%;
+	height: 40px;
+	left: 77px;
+	bottom: 0;
+	z-index: 55;
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+.linkedin:before {
+	font-family: "FontAwesome";
+	content: '\f0e1';
+	font-size: 24px;
+	margin-left: 20px;
+	color: #00c6ff;
+}
+.linkedin:hover:before {
+	color: #ff9933;
+}
+.github:before {
+	font-family: "FontAwesome";
+	content: '\f09b';
+	font-size: 24px;
+	margin-left: 20px;
+	color: #00c6ff;
+}
+.github:hover:before {
+	color: #ff9933;
+}
+.email:before {
+	font-family: "FontAwesome";
+	content: '\f003';
+	font-size: 24px;
+	margin-left: 20px;
+	color: #00c6ff;
+}
+.email:hover:before {
+	color: #ff9933;
+}
+.light {       
+	background-position: 0 0;
+  color:#333;
+}
+/* main */
+/* main */
+.main {
+	margin-left: 77px;
+	width: 100%;
+	height: 95%;
+	background-color: #fff;
+	color: #000;
+	position: fixed;
+	bottom: 77px;
+	top: 77px;
+	-webkit-transition: opacity 2s ease-in;
+	-moz-transition: opacity 2s ease-in;
+	-o-transition: opacity 2s ease-in;
+	-ms-transition: opacity 2s ease-in;
+	transition: opacity 2s ease-in;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.width-wrapper {
+  max-width: 1000px;
+	height: 500px;
+  margin: 0 auto;
+}
+.subtitle {
+  margin-bottom: 40px;
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+}
+.content {
+  padding: 40px 0 0 0;
+}
+.content-3 {
+	padding-bottom: 60px;
+}
+.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.first {
+	margin-top: 0;
+	font-size: 24px;
+}
+.title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.parallax-1 {
+  background-image: url("images/Bicycle.jpg");
+}
+.parallax-2 {
+  background-image: url("images/Bicycle.jpg");
+}
+.parallax-3 {
+  background-image: url("images/Kitten3.jpg");
+}
+/* works */
+/* works */
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+.effect-apollo {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	height: auto;
+	background: #3498db;
+	text-align: center;
+	cursor: pointer;
+}
+.profile-img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+.profile-caption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.strong {
+	word-spacing: -0.15em;
+	font-weight: 300;
+	text-align: left;
+	font-weight: 800;
+}
+.profile-img {
+	opacity: 0.95;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+.profile-caption:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.5);
+	content: '';
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: transform 0.6s;
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+.profile-img-sub {
+	position: absolute;
+	right: 65px;
+	bottom: 65px;
+	margin: 3em;
+	padding: 0 1em;
+	max-width: 150px;
+	border-right: 4px solid #fff;
+	letter-spacing: 1px;
+	font-size: 16px;
+	text-align: right;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+.effect-apollo:hover img {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+.effect-apollo:hover figcaption:before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+.effect-apollo:hover p {
+	opacity: 1;
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+.profile-descript {
+	width: 200px;
+	height: 300px;
+	position: relative;
+	top: 100px;
+	font-size: 20px;
+	
+	display: inline;
+}
+.descript-first {
+	margin-top: 180px;
+	font-size: 20px;
+	font-weight: 300;
+}
+.descript {
+  margin: 40px 0 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media all and (min-width: 600px) {
+  .subtitle {
+    font-size: 42px;
+  }
+  .descript {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  .title {
+    font-size: 70px;
+  }
+	.first {
+		font-size: 70px;
+	}
+}
